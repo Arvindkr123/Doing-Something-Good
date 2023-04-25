@@ -1,18 +1,13 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-const Hello = () => {
-    return (
-        <div>
-            <h1>welcome to the Export default and Named Export</h1>
-            <p>in  Named export we can't change the name but in Default export</p>
-        </div>
-    )
+export default class Hello extends Component {
+    render() {
+        const { name, age } = this.props;
+        return (
+            <div>
+                <h1>{name}</h1>
+                <h1>{age}</h1>
+            </div>
+        )
+    }
 }
-
-export const Greeting = () => {
-    return (
-        <div>WELCOME ARVIND K</div>
-    )
-}
-
-export default Hello;

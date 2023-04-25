@@ -1,12 +1,11 @@
 import React from 'react'
 import './App.css'
-import Hello, { Greeting } from './components/Hello';
+import Hello from './components/Hello';
 
 const App = () => {
     return (
         <>
-            <Greeting />
-            <Hello />
+            <Hello name='ARVIND K' age='22' />
         </>
     )
 }
