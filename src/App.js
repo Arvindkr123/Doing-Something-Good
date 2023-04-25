@@ -5,7 +5,7 @@ import Hello from './components/Hello';
 const App = () => {
     return (
         <>
-            <Hello/>
+            <Hello value={'Arvind K'} />
         </>
     )
 }

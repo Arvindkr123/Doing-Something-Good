@@ -1,20 +1,14 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class Hello extends Component {
-    constructor() {
-        super();
-        this.state = {
-            name: 'Arvind K',
-            age : 22
-        }
+const Hello = ({ value }) => {
+    const handleEventListner = (value) => {
+        alert(`Hello Bro.... ${value}`)
     }
-    render() {
-        const { name, age } = this.state;
-        return (
-            <>
-                <h1>{name}</h1>
-                <h1>{age}</h1>
-            </>
-        )
-    }
+  return (
+      <div>
+          <input type="button" value="Click Me" onClick={()=>handleEventListner(value)} />
+    </div>
+  )
 }
+
+export default Hello;
