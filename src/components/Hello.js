@@ -1,14 +1,25 @@
 import React, { Component } from 'react'
 
 export default class Hello extends Component {
-    render() {
-        const { value } = this.props;
-        const handleClick = (value) => {
-            alert(`Hello there ${value}`)
+    constructor() {
+        super();
+        // this.handleBinding = this.handleBinding.bind(this);
+        this.state = {
+            name: 'Arvind K'
         }
+    }
+
+    // handleBinding =()=> {
+    //     this.setState({name : 'Arvind Kumar'})
+    // }
+    handleBinding(){
+        this.setState({name : 'Arvind Kumar'})
+    }
+    render() {
         return (
             <div>
-                <input type="button" value="Click" onClick={() => handleClick(value)} />
+                <h1>{this.state.name}</h1>
+                <button type='button' onClick={()=>this.handleBinding()}>Click</button>
             </div>
         )
     }
