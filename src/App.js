@@ -1,9 +1,12 @@
 import React from 'react'
+import Hello from './components/Hello';
 
 const App = () => {
     return (
         <div>
-            <h1>Hello World</h1>
+            <Hello name={'Arvind K'} age={22}>
+                <p>I'm children of the Hello </p>
+            </Hello>
         </div>
     )
 }
