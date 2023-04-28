@@ -1,12 +1,132 @@
-*{
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav {
+    background-color: rgb(30, 108, 242);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.about{
+    background-color: crimson;
+    width: 100%;
+    height: 100vh;
+}
+.contact{
+    background-color: rgb(133, 131, 131);
+    width: 100%;
+    height: 100vh;
+}
+
+.header{
+    background-color: rgb(234, 236, 240);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-size: 2rem;
+}
+.header > a{
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+}
+
+.container {
+    background-color: rgb(215, 212, 201);
+    width: 70%;
+    margin: auto;
+    min-height: 100vh;
+    padding: 4vmax 8vmax;
     box-sizing: border-box;
 }
 
-body{
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: forestgreen;
+.container>form {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+input,
+textarea,
+button {
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.214);
+    margin: 10px 0;
+    font-size: 1.4rem;
+    border-radius: 22apx;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    background-color: rgb(30, 30, 30);
     color: white;
 }
 
+.container>h1 {
+    text-align: center;
+    margin: 30px;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.task {
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.task p {
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.task span {
+    font-size: 1.5rem;
+}
+
+
+.task>div {
+    width: 100%;
+}
+
+.task button {
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    font-size: 1.6rem;
+    display: flex;
+    background-color: crimson;
+    align-items: center;
+    justify-content: center;
+}
+
+.task button:hover {
+    background-color: red;
+}
+
+footer{
+    background-color: rgb(30, 30, 30);
+    width: 100%;
+    height: 20rem;
+}
+
+.user{
+    background-color: yellow;
+    width: 100%;
+    height: 100vh; 
+}
